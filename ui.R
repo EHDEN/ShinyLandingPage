@@ -93,7 +93,7 @@ shinyUI(
                                                     Tomcat egyptian mau. Cornish rex sphynx sphynx yet
                                                     cougar and panther. Panther siberian. Lynx munchkin
                                                     american shorthair. Norwegian forest. ',
-                                                    button_link = 'http://getbootstrap.com/', button_label = 'Click me'))
+                                                    button_link = 'https://data.ehden.eu/ShinyLandingPage/apps/QueryLibrary', button_label = 'Click me'))
                           
                         )))
     
