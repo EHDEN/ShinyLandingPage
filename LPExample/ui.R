@@ -17,7 +17,7 @@ shinyUI(
          popify(tags$i(class="fa fa-refresh fa-5x"),
                 title = "Reload", 
                 content = "Click here to restart the Shiny session",
-                placement = "right"))
+                placement = "right")),
   # Include a fliudPage above the navbar to incorporate a icon in the header
   # Source: http://stackoverflow.com/a/24764483
   fluidPage(
