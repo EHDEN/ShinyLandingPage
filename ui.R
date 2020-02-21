@@ -22,27 +22,27 @@ shinyUI(
                         type="image/png" />'))),
     div(style="padding: 1px 0px; width: '100%'",
         titlePanel(
-          title="", windowTitle="EHDEN Study Results"
+          title="", windowTitle="Window Tab title"
         )
     ),
 
-    navbarPage(title=div(img(src="avatar.png"), "EHDEN Data Repository"),
+    navbarPage(title=div(img(src="Rlogo.png"), "Application NavBar Title"),
                inverse = F, # for diff color view
-               theme = shinytheme("darkly"),
+               theme = shinytheme("united"),
 
-               tabPanel("Home", icon = icon("home"),
+               tabPanel("Home Page 1", icon = icon("home"),
 
-                        jumbotron("Welcome to the EHDEN Data Repository", "Here you can find all the web applications produced by EHDEN studies",
+                        jumbotron("Hi ShinyLP!", "Call attention to important application features or provide guidance",
                                   buttonLabel = "Click Me"),
                          fluidRow(
                           column(6, panel_div(class_type = "primary", panel_title = "Directions",
-                                              content = "How to use the app (ToDo)")),
-                          column(6, panel_div("primary", "Application Maintainers",
-                                             HTML("Email Me: <a href='mailto:enquiries@ehden.eu?Subject=Shiny%20Server%20Help' target='_top'>EHDEN Support</a>")))
+                                              content = "How to use the app")),
+                          column(6, panel_div("success", "Application Maintainers",
+                                             HTML("Email Me: <a href='mailto:jasmine.dumas@gmail.com?Subject=Shiny%20Help' target='_top'>Jasmine Dumas</a>")))
                         ),  # end of fluidRow
                         fluidRow(
-                          column(6, panel_div("primary", "App Status", "The Landing Page is currently under development")),
-                          column(6, panel_div("primary", "Security and License", "Copyright 2020")),
+                          column(6, panel_div("info", "App Status", "Include text with status, version and updates")),
+                          column(6, panel_div("danger", "Security and License", "Copyright 2016")),
 
                           #### FAVICON TAGS SECTION ####
                           tags$head(tags$link(rel="shortcut icon", href="favicon.ico")),
@@ -53,7 +53,7 @@ shinyUI(
                                   )
 
                         )),
-               tabPanel("Statistics", icon = icon("cog"),
+               tabPanel("Home Page 2", icon = icon("cog"),
                         wells(content = "Important Info can go up here before a
                               user starts exploring the application and its features",
                               size = "default"),
@@ -66,7 +66,7 @@ shinyUI(
 
                         ),
 
-               tabPanel("Study-a-thons", icon = icon("calendar"),
+               tabPanel("Home Page 3", icon = icon("calendar"),
 
                         jumbotron("Hello shinyLP!", "Dock Several Applications on a page as a portal",
                                   button = FALSE),
