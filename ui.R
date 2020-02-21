@@ -87,13 +87,13 @@ shinyUI(
                                                     cougar and panther. Panther siberian. Lynx munchkin
                                                     american shorthair. Norwegian forest. ',
                                                     button_link = 'http://getbootstrap.com/', button_label = 'Click me')),
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Application 3',
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'QueryLibrary',
                                                     content = 'Havana brown cornish rex bombay but bombay,
                                                     but havana brown devonshire rex and devonshire rex.
                                                     Tomcat egyptian mau. Cornish rex sphynx sphynx yet
                                                     cougar and panther. Panther siberian. Lynx munchkin
                                                     american shorthair. Norwegian forest. ',
-                                                    button_link = 'https://data.ehden.eu/ShinyLandingPage/apps/QueryLibrary', button_label = 'Click me'))
+                                                    button_link = 'https://data.ehden.eu/ShinyLandingPage/QueryLibrary/', button_label = 'Click me'))
                           
                         )))
     
