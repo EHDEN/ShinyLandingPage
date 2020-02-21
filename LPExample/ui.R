@@ -13,7 +13,15 @@ library(shinythemes)
 
 # Define UI for application
 shinyUI(
+<<<<<<< HEAD
 
+=======
+  tags$a(href="javascript:history.go(0)", 
+         popify(tags$i(class="fa fa-refresh fa-5x"),
+                title = "Reload", 
+                content = "Click here to restart the Shiny session",
+                placement = "right")),
+>>>>>>> 4c62084e214524a9226b41ebc09e10c475c57e88
   # Include a fliudPage above the navbar to incorporate a icon in the header
   # Source: http://stackoverflow.com/a/24764483
   fluidPage(
