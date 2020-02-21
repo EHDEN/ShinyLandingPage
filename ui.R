@@ -28,7 +28,7 @@ shinyUI(
     
     navbarPage(title=div(img(src="avatar.png"), "EHDEN Data Repository"),
                inverse = F, # for diff color view
-               theme = shinytheme("darkly"),
+               theme = shinytheme("cerulean"),
                
                tabPanel("Home", icon = icon("home"),
                         
@@ -67,33 +67,34 @@ shinyUI(
                ),
                
                tabPanel("Study-a-thons", icon = icon("calendar"),
-                        
-                        jumbotron("Hello shinyLP!", "Dock Several Applications on a page as a portal",
-                                  button = FALSE),
+                        fluidRow(
+                          column(6, jumbotron(image = 'barcelona.png', "EHDEN Study-a-thons", "team work to perform high-impact disruptive research",
+                                              button = FALSE)),
+                          column(3, HTML("<img src='barcelona.png' width='400' height='300' alt='This is alternate text'></img>")),
+                          column(3,    HTML("<img src='oxford.png' width='400' height='300' alt='This is alternate text'></img>"))
+                                 
+                        ),
+                       
                         hr(),
                         fluidRow(
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Application 1',
-                                                    content = 'Havana brown cornish rex bombay but bombay,
-                                              but havana brown devonshire rex and devonshire rex.
-                                              Tomcat egyptian mau. Cornish rex sphynx sphynx yet
-                                              cougar and panther. Panther siberian. Lynx munchkin
-                                              american shorthair. Norwegian forest. ',
-                                                    button_link = 'http://getbootstrap.com/', button_label = 'Click me')
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Effect Estimation in Rheumatoid Arthritis',
+                                                    content = 'These research results are from a retrospective, real-world, 
+                                                    observational study to estimate the population-level effects of conventional 
+                                                    synthetic disease-modifying antirheumatic drugs among patients with rheumatoid arthritis. 
+                                                    This web-based application provides an interactive platform to explore all analysis results 
+                                                    enerated as part of this study, as a supplement to abstracts and a full manuscript currently 
+                                                    in development for submission to scientific conferences and a peer-reviewed journal. 
+                                                    During abstract and manuscript development and the subsequent review period, 
+                                                    these results are considered under embargo and should not be disclosed 
+                                                    without explicit permission and consent from the authors',
+                                                    button_link = 'https://data.ohdsi.org/EhdenRaDmardsEstimation/', button_label = 'Click me')
                           ),
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Application 2',
-                                                    content = 'Havana brown cornish rex bombay but bombay,
-                                                    but havana brown devonshire rex and devonshire rex.
-                                                    Tomcat egyptian mau. Cornish rex sphynx sphynx yet
-                                                    cougar and panther. Panther siberian. Lynx munchkin
-                                                    american shorthair. Norwegian forest. ',
-                                                    button_link = 'http://getbootstrap.com/', button_label = 'Click me')),
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Movie Explorer',
+                                                    content = 'Test application hosted on data.ehden.eu server',
+                                                    button_link = 'http://data.ehden.eu/movie-explorer/', button_label = 'Click me')),
                           column(4, thumbnail_label(image = 'Rlogo.png', label = 'QueryLibrary',
-                                                    content = 'Havana brown cornish rex bombay but bombay,
-                                                    but havana brown devonshire rex and devonshire rex.
-                                                    Tomcat egyptian mau. Cornish rex sphynx sphynx yet
-                                                    cougar and panther. Panther siberian. Lynx munchkin
-                                                    american shorthair. Norwegian forest. ',
-                                                    button_link = 'https://data.ehden.eu/ShinyLandingPage/QueryLibrary/', button_label = 'Click me'))
+                                                    content = 'Library containing many SQL queries on the OMOP-CDM',
+                                                    button_link = 'https://data.ohdsi.org/QueryLibrary/', button_label = 'Click me'))
                           
                         )))
     
