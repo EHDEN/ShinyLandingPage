@@ -7,7 +7,7 @@
 #' @param button_label a object of class characters
 #' @param lastUpdate the date of the last update 
 #' '
-#' @return a HTML object to be included in the ui section of a shiny app
+#' @return a HTML object to be included in the ui section of a shiny apps
 #' @import shiny
 #' @seealso \href{http://getbootstrap.com/components/#thumbnails-custom-content}{Thumbnails}
 #' @examples  thumbnail_label(image = 'Rlogo.png', label = 'App 1', content = 'here we go again',
@@ -30,7 +30,4 @@ infoPanel <- function(image=NULL, label, content, button_link, button_label,last
   }
 }
 
-HTML("<div style='vertical-align:middle; text-align:center'> 
-                                  <img src='EHDEN_Logo.png' width='25%'  alt='This is alternate text'></img>
-                             </div>")
 
