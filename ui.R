@@ -58,7 +58,20 @@ shinyUI(
                           
                         )),
                
-               
+               tabPanel("Tools", icon = icon("toolbox"),
+                        fluidRow(
+                          column(12, jumbotron(image = 'barcelona.png', "EHDEN Tools", "Tools developed by the EHDEN project to support the community",
+                                              button = FALSE))
+                        ),
+                        
+                        hr(),
+                        fluidRow(
+                          column(4, infoPanel(label = 'Query Library',
+                                              content = 'Contains examples of queries against the OMOP Common Data Model for all the data domains and 
+                                                        the Standardized Vocabularies.',
+                                              button_link = 'https://data.ehden.eu/QueryLibrary/', button_label = 'Click me', lastUpdate = "23-03-2020")
+                          )
+                          )),
                tabPanel("Study-a-thons", icon = icon("calendar"),
                         fluidRow(
                           column(6, jumbotron(image = 'barcelona.png', "EHDEN Study-a-thons", "Team work to perform high-impact disruptive research.",
