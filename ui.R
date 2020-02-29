@@ -35,13 +35,13 @@ shinyUI(
                                   <img src='EHDEN_Logo.png' width='40%'  alt='This is alternate text'></img>
                              </div>"),
                         showcaseComponent(header="Welcome to the EHDEN Data Repository", 
-                                          content="Here you can find data dashboards of studies from EHDEN Data Partners and tools developed by the EHDEN project in close 
+                                          content="Here you can find data dashboards of studies performed in the EHDEN Data Network, and tools developed in close 
                                           collaboration with OHDSI",text="For more information about EHDEN visit our Website", url="https://www.ehden.eu",
                                           button=FALSE),
                         fluidRow(
                           column(6, panel_div(class_type = "primary", panel_title = "How to use the repository?",
                                               content = "This repository enables researchers in the EHDEN Data Network to share dashboards containing study results.
-                                              In addition this repository contains Shiny web tools not related to a particular study.
+                                              In addition this repository contains web tools that are not related to a particular study but of interest for the community.
                                               If you have a tool or study result that you like to add create an issue in our github repository and we will support you. ")),
                           column(6, panel_div("primary", "Latest Apps", "To be added"))
                                                   ),  # end of fluidRow
