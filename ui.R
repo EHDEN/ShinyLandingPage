@@ -31,8 +31,10 @@ shinyUI(
                theme = shinytheme("cerulean"),
                
                tabPanel("Home", icon = icon("home"),
-                        
-                        showcaseComponent(image="EHDEN_Logo.png", width="30%", header="Welcome to the EHDEN Data Repository", 
+                        HTML("<div style='vertical-align:middle; text-align:center'> 
+                                  <img src='EHDEN_Logo.png' width='20%'  alt='This is alternate text'></img>
+                             </div>"),
+                        showcaseComponent(header="Welcome to the EHDEN Data Repository", 
                                           content="Here you can find data dashboards of studies from EHDEN Data Partners and tools developed by the EHDEN project in close 
                                           collaboration with OHDSI",text="For more information about EHDEN visit our Website", url="https://www.ehden.eu",
                                           button=FALSE),

@@ -30,5 +30,7 @@ infoPanel <- function(image=NULL, label, content, button_link, button_label,last
   }
 }
 
-
+HTML("<div style='vertical-align:middle; text-align:center'> 
+                                  <img src='EHDEN_Logo.png' width='25%'  alt='This is alternate text'></img>
+                             </div>")
 
