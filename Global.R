@@ -12,13 +12,13 @@ source("./R/DashboardComponents.R")
 #' @seealso \href{http://getbootstrap.com/components/#jumbotron}{Jumbotron}
 #' @examples  jumbotron("Hi Shiny!", "text to show", buttonLabel = "Click Me")
 #' @export
-showcaseComponent <- function(image = NULL, header, content, url=NULL, text=NULL, ...){
+showcaseComponent <- function(image = NULL, width="100%",header, content, url=NULL, text=NULL, ...){
   
   button_label = c(...)
   
   html = "div(class = 'jumbotron'"
   if (!is.null(image)){
-    html <- div(align="center", class = "jumbotron", img(src = image, alt = "..."),h1(header), p(content),
+    html <- div(align="center", class = "jumbotron", img(src = image, width=width, alt = "..."),h1(header), p(content),
                 p(HTML(paste0("<a href='",url,"'>",text,"</a>"))))
   } else {
     html <- div(align="center", class = "jumbotron", h1(header), p(content),p(HTML(paste0("<a href='",url,"'>",text,"</a>"))))
