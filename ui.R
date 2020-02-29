@@ -61,7 +61,7 @@ shinyUI(
                
                tabPanel("Tools", icon = icon("toolbox"),
                         fluidRow(
-                          column(12, jumbotron(image = 'barcelona.png', "EHDEN Tools", "Tools developed by the EHDEN project to support the community",
+                          column(12, jumbotron(image = 'barcelona.png', "EHDEN Tools", "Tools developed by the EHDEN project in close collaboration with the OHDSI community",
                                               button = FALSE))
                         ),
                         
