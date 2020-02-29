@@ -26,7 +26,7 @@ shinyUI(
         )
     ),
     
-    navbarPage(title=div(img(src="EHDEN_avatar_small.png"), "EHDEN Data Repository"),
+    navbarPage(title=div(img(src="EHDEN_Avatar_small.png"), "EHDEN Data Repository"),
                inverse = F, # for diff color view
                theme = shinytheme("cerulean"),
                
