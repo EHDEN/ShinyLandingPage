@@ -33,7 +33,8 @@ shinyUI(
                tabPanel("Home", icon = icon("home"),
                         
                         showcaseComponent(image="EHDEN_Logo.png",header="Welcome to the EHDEN Data Repository", 
-                                          content="Here you can find data dashboards of studies produced by EHDEN Data Partners and tools developed by EHDEN",
+                                          content="Here you can find data dashboards of studies from EHDEN Data Partners and tools developed by the EHDEN project in close 
+                                          collaboration with OHDSI",text="For more information about EHDEN visit our Website", url="https://www.ehden.eu",
                                           button=FALSE),
                         fluidRow(
                           column(6, panel_div(class_type = "primary", panel_title = "How to use the repository?",
@@ -43,9 +44,9 @@ shinyUI(
                           column(6, panel_div("primary", "Latest Apps", "To be added"))
                                                   ),  # end of fluidRow
                         fluidRow(
-                          column(6, panel_div("primary", "Repository Status", "The Repository is currently under development by the EHDEN projects and should no be used yet")),
+                          column(6, panel_div("primary", "Repository Status", "The Repository is currently under development by the EHDEN project and should no be used yet")),
                           column(6, panel_div("primary", "Contact",
-                                              HTML("Email Me: <a href='mailto:enquiries@ehden.eu?Subject=Shiny%20Server%20Help' target='_top'>EHDEN Support</a>")))
+                                              HTML("Email: <a href='mailto:enquiries@ehden.eu?Subject=Shiny%20Server%20Help' target='_top'>EHDEN Enquiries</a>")))
                           ,
                           
                           #### FAVICON TAGS SECTION ####
@@ -70,9 +71,13 @@ shinyUI(
                                               content = 'Contains examples of queries against the OMOP Common Data Model for all the data domains and 
                                                         the Standardized Vocabularies.',
                                               button_link = 'https://data.ehden.eu/QueryLibrary/', button_label = 'Click me', lastUpdate = "23-03-2020")
+                          ),
+                          column(4, infoPanel(label = 'Tantalus',
+                                              content = 'Enables the comparison of different versions of the Standardized Vocabularies obtain from the ATHENA tool',
+                                              button_link = 'https://data.ehden.eu/TantalusApp/', button_label = 'Click me', lastUpdate = "23-03-2020")
                           )
                           )),
-               tabPanel("Study-a-thons", icon = icon("calendar"),
+               tabPanel("Study-a-thons", icon = icon("users"),
                         fluidRow(
                           column(6, jumbotron(image = 'barcelona.png', "EHDEN Study-a-thons", "Team work to perform high-impact disruptive research.",
                                               button = FALSE)),
