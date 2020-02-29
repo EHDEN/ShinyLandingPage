@@ -32,7 +32,7 @@ shinyUI(
                
                tabPanel("Home", icon = icon("home"),
                         
-                        showcaseComponent(image="EHDEN_Logo.png", width="35%", header="Welcome to the EHDEN Data Repository", 
+                        showcaseComponent(image="EHDEN_Logo.png", width="30%", header="Welcome to the EHDEN Data Repository", 
                                           content="Here you can find data dashboards of studies from EHDEN Data Partners and tools developed by the EHDEN project in close 
                                           collaboration with OHDSI",text="For more information about EHDEN visit our Website", url="https://www.ehden.eu",
                                           button=FALSE),
@@ -79,10 +79,10 @@ shinyUI(
                           )),
                tabPanel("Study-a-thons", icon = icon("users"),
                         fluidRow(
-                          column(6, jumbotron(image = 'barcelona.png', "EHDEN Study-a-thons", "Team work to perform high-impact disruptive research.",
+                          column(6, jumbotron(image = NULL, "EHDEN Study-a-thons", "Team work to perform high-impact disruptive research.",
                                               button = FALSE)),
-                          column(3, HTML("<img src='barcelona.png' width='100%' height='100%' alt='This is alternate text'></img>")),
-                          column(3, HTML("<img src='oxford.png' width='100%' height='100%' alt='This is alternate text'></img>"))
+                          column(3, HTML("<img src='barcelona-group.png' width='100%' height='100%' alt='This is alternate text'></img>")),
+                          column(3, HTML("<img src='oxford-group.png' width='100%' height='100%' alt='This is alternate text'></img>"))
                                  
                         ),
                        
